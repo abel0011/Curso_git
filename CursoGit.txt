@@ -1,0 +1,70 @@
+Bitacora del capitan - Registrar sucesos "Describir detalles"
+Desarrolo es un "viaje" (Tener documentado tu viaje)
+
+RECOMENDACIONES
+1.-Mantener una sencuencia cronologica
+2.-registrar la Mayor cantidad posible de eventos
+3.-Describir cada evento lo mas detalladamente posible
+
+Git -Sistema de Control de Versiones
+
+Versión ejem-> windows xp windows vista windows10 la base es Windows (conjunto de nuevas caracteristicas y funcionalidades de un software disponibles para un usuario final)
+
+Sistema control de versiones --> herramienta para el manejo de diferencias versiones
+
+Repositorio analogia --> tienes una Caja, desarrolas un sofware y cuando terminas imprimes tu codigo lo pones en un folder y lo guardas en la caja , Al dia siguiente le agregan unas funcionalidades e imprimimos todo el codigo y lo guardo  en la cajita , PASA UN AÑO y tenemos toda un a caja compleeta (Repositorio es una caja )
+
+CONFIGURACION DE GIT user-repositorio
+git config --global user.name "Abel Paz"
+git config --global user.email "abellpazz12@gmail.com"
+git config -l -->lista de configuraciones
+
+REPOSITOIO -->peede ser o no una carpeta vacia (creara una carpeta .git)
+
+git init -->iniciamos la linea de tiempo de nuestro repositorio 
+
+LOS 3 ESTADOS DE GIT 
+---Espacio de trabajo
+---Area de preparación
+---Repositorio (Carpeta .git)
+
+git status --> Muestra los commit , muestra los archivos que no se le estan haciendo seguimiento (untracked files) ,Me solicita que utilice el comando (git add para untracked)
+
+staged -->area
+
+git add . --> Agrege todos los archivos que esteen en esta carpeta
+git commit -m "" --> Se agrega un mensaje sin nesecidad de abrir un una hoja 
+
+git commit -am ""--> se Guardan todos los archivos modificados
+
+git checkout nombrearchivo --> regresar a la version anterior del archivo
+gt checkout -f --> regresar todos los archivos a una version anterior
+git restore --staged  nombre_archivo --> restaurando el archivo doificado 
+
+git diff nombre_arch --> te compra los archivos con los cambios que has agregado
+git diff --stat -->solote te da una destadistica con "++" agrega  "--"elimina
+git diff --numstat nom_arch --> muesta en numeros las adiciones y eliminaciones
+
+git log --> ver las versiones del proyecto
+git checkout hash--> regresando a la version que elejiste
+
+---
+documentation
+https://git-scm.com/docs/git-log
+---
+
+git log --raw --> nos da informacion de que paso en ese commit 
+git log --online --> mostrar reducido los cambios y los hash
+git log --online -n  nurmo_lineas--> mostrar el numero de lineas que decidas
+git log --pretty=format"El autor fue %h fue %an"
+git checkout -b Nomre_Rama --> crea una nueva rama -b =(branch)
+git log --oneline --all --> muestra informacion de todas las ramas
+git log --online --all -graph --decorate --> muestra informacion decorado con asteriscos con  y lineas
+git  branch -D nomre_rama --> eliminacion de la rama
+git clone https.... --> clonar repositorio
+
+Creando key ssh
+ ssh-keygen -t rsa --> generando key ssh
+
+Qitando archivos  del area de preparación
+
