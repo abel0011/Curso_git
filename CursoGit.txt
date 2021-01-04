@@ -66,5 +66,10 @@ git clone https.... --> clonar repositorio
 Creando key ssh
  ssh-keygen -t rsa --> generando key ssh
 
+git push origin master --> mandar commits a un repositorio ya creado
+git fetch origin --> obtener archivos generados en el repositorio 
+git pull origin master --> jalar los datos 
+git push --delete origin nombre_rama --> eliminar la rama que se ecunetra en la nube
+
 Qitando archivos  del area de preparación
 
